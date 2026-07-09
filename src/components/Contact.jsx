@@ -1,8 +1,29 @@
+import { useState } from "react";
 import { profile } from "../data";
 import Reveal from "./Reveal";
 import Icon from "./Icon";
 
 export default function Contact() {
+  const [copied, setCopied] = useState(false);
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(profile.email);
+    } catch {
+      // Fallback for older / non-secure contexts
+      const ta = document.createElement("textarea");
+      ta.value = profile.email;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+    }
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section id="contact" className="contact-section">
       <div className="container">
@@ -17,9 +38,18 @@ export default function Contact() {
             let's talk!
           </p>
           <div className="contact-links">
-            <a href={`mailto:${profile.email}`} className="btn btn-primary">
+            <button
+              type="button"
+              onClick={copyEmail}
+              className="btn btn-primary"
+              aria-label={copied ? "Email copied to clipboard" : `Copy email ${profile.email}`}
+            >
+              <Icon name={copied ? "check" : "copy"} size={18} />
+              {copied ? "Copied!" : profile.email}
+            </button>
+            <a href={`mailto:${profile.email}`} className="btn btn-ghost">
               <Icon name="mail" size={18} />
-              {profile.email}
+              Send email
             </a>
             <a href={profile.linkedin} target="_blank" rel="noreferrer" className="btn btn-ghost">
               <Icon name="linkedin" size={18} />
