@@ -1,5 +1,6 @@
 import { skills } from "../data";
 import Reveal from "./Reveal";
+import Icon from "./Icon";
 
 export default function Skills() {
   return (
@@ -16,7 +17,10 @@ export default function Skills() {
             <Reveal key={group.category} delay={i * 80}>
               <div className="card skill-card">
                 <h3>
-                  <span>{group.icon}</span> {group.category}
+                  <span className="skill-icon">
+                    <Icon name={group.icon} size={20} />
+                  </span>
+                  {group.category}
                 </h3>
                 <div className="tag-list">
                   {group.items.map((item) => (

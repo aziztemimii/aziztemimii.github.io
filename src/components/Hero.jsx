@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { profile } from "../data";
+import Icon from "./Icon";
 
 export default function Hero() {
   const imgRef = useRef(null);
@@ -28,19 +29,25 @@ export default function Hero() {
           <p className="tagline">{profile.tagline}</p>
           <div className="hero-actions">
             <a href="#projects" className="btn btn-primary">
-              View my work →
+              View my work
+              <Icon name="arrowRight" size={18} />
             </a>
             <a
               href={profile.cvFile}
               download="Mohamed-Aziz-Ben-Hassine-Temimi-CV.pdf"
               className="btn btn-ghost"
             >
-              ⬇ Download CV
+              <Icon name="download" size={18} />
+              Download CV
             </a>
           </div>
           <div className="hero-meta">
-            <span>📍 {profile.location}</span>
-            <span>{profile.openTo}</span>
+            <span>
+              <Icon name="mapPin" size={16} /> {profile.location}
+            </span>
+            <span>
+              <Icon name="globe" size={16} /> {profile.openTo}
+            </span>
           </div>
         </div>
         {profile.photo && photoOk && (

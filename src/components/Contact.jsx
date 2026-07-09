@@ -1,5 +1,6 @@
 import { profile } from "../data";
 import Reveal from "./Reveal";
+import Icon from "./Icon";
 
 export default function Contact() {
   return (
@@ -17,12 +18,15 @@ export default function Contact() {
           </p>
           <div className="contact-links">
             <a href={`mailto:${profile.email}`} className="btn btn-primary">
-              ✉ {profile.email}
+              <Icon name="mail" size={18} />
+              {profile.email}
             </a>
             <a href={profile.linkedin} target="_blank" rel="noreferrer" className="btn btn-ghost">
+              <Icon name="linkedin" size={18} />
               LinkedIn
             </a>
             <a href={profile.github} target="_blank" rel="noreferrer" className="btn btn-ghost">
+              <Icon name="github" size={18} />
               GitHub
             </a>
           </div>

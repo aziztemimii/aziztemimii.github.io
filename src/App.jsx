@@ -23,7 +23,8 @@ export default function App() {
       </main>
       <footer>
         <div className="container">
-          © {new Date().getFullYear()} {profile.name} — Built with React ⚛
+          © {new Date().getFullYear()} {profile.name} — Designed & built with
+          React
         </div>
       </footer>
     </>

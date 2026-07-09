@@ -370,7 +370,34 @@ button:focus-visible {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+}
+.skill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  color: var(--accent);
+}
+
+/* Inline icons in buttons / meta inherit text color and align with text */
+.btn svg,
+.hero-meta svg,
+.contact-links svg {
+  flex-shrink: 0;
+}
+.hero-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.hero-meta svg {
+  color: var(--accent);
 }
 .tag-list {
   display: flex;
@@ -468,16 +495,18 @@ button:focus-visible {
   overflow: hidden;
 }
 .project-card.featured::before {
-  content: "★ Featured";
+  content: "Featured";
   position: absolute;
   top: 16px;
   right: 16px;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   font-family: var(--mono);
-  padding: 4px 10px;
+  padding: 4px 11px;
   border-radius: 999px;
   background: var(--gradient);
-  color: #fff;
+  color: #06251c;
   font-weight: 600;
 }
 .project-card .period {

@@ -9,7 +9,7 @@ export const profile = {
   tagline:
     "I build intelligent systems — from machine learning models to multi-agent AI chatbots. Currently seeking a final-year internship (PFE) abroad in Data Science / AI.",
   location: "Hammamet, Tunisia",
-  openTo: "Open to international opportunities 🌍",
+  openTo: "Open to international opportunities",
   email: "azizbenhssine7@gmail.com",
   phone: "+216 90 505 949",
   github: "https://github.com/aziztemimii",
@@ -26,7 +26,7 @@ export const profile = {
 export const skills = [
   {
     category: "Machine Learning",
-    icon: "🤖",
+    icon: "cpu",
     items: [
       "Regression",
       "Classification",
@@ -38,12 +38,12 @@ export const skills = [
   },
   {
     category: "Deep Learning",
-    icon: "🧠",
+    icon: "brain",
     items: ["ANN", "CNN", "RNN / LSTM", "Transformers", "NLP"],
   },
   {
     category: "GenAI & LLMs",
-    icon: "✨",
+    icon: "sparkles",
     items: [
       "Multi-Agent Systems",
       "RAG",
@@ -55,7 +55,7 @@ export const skills = [
   },
   {
     category: "Data Engineering",
-    icon: "🗄️",
+    icon: "database",
     items: [
       "SQL",
       "Data Cleaning & Preparation",
@@ -67,7 +67,7 @@ export const skills = [
   },
   {
     category: "Programming & Tools",
-    icon: "🛠️",
+    icon: "terminal",
     items: [
       "Python (Pandas, NumPy, Scikit-learn)",
       "TensorFlow / PyTorch",
@@ -78,7 +78,7 @@ export const skills = [
   },
   {
     category: "Mathematics & Statistics",
-    icon: "📐",
+    icon: "sigma",
     items: ["Probability", "Statistics", "Predictive Analysis"],
   },
 ];
