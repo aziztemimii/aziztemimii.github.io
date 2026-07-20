@@ -29,9 +29,9 @@ export default function Contact() {
       <div className="container">
         <Reveal>
           <span className="section-label">05 · Contact</span>
-          <div className="big">
+          <h2 className="big">
             Let's build something <span className="gradient-text">together</span>
-          </div>
+          </h2>
           <p>
             I'm currently looking for a final-year internship (PFE) abroad in
             Data Science / AI. If you think I'd be a good fit for your team,

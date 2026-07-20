@@ -159,6 +159,9 @@ button:focus-visible {
   height: 64px;
 }
 .nav-logo {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-family: var(--mono);
   font-weight: 700;
   font-size: 1.05rem;
@@ -174,6 +177,9 @@ button:focus-visible {
   list-style: none;
 }
 .nav-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
   color: var(--text-muted);
   text-decoration: none;
   font-size: 0.9rem;
@@ -184,6 +190,9 @@ button:focus-visible {
   color: var(--text);
 }
 .nav-cta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
   padding: 8px 18px;
   border-radius: 10px;
   background: var(--gradient);
@@ -539,6 +548,11 @@ button:focus-visible {
   font-size: 0.85rem;
   text-decoration: none;
   font-family: var(--mono);
+  /* Cible tactile confortable (>= 44px) sans agrandir visuellement le lien */
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-right: 6px;
 }
 .project-links a:hover {
   text-decoration: underline;
