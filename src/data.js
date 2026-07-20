@@ -135,7 +135,7 @@ export const projects = [
     description:
       "XGBoost classifier detecting fraudulent transactions on a highly imbalanced dataset (142 frauds among 85,118 test transactions). Class imbalance handled with scale_pos_weight, raising fraud recall from 0.71 to 0.79 (F1 0.84) — catching 112 of 142 frauds. Deployed as a FastAPI REST API and load-tested with 100 concurrent requests.",
     tags: ["Python", "XGBoost", "scikit-learn", "FastAPI", "Imbalanced Data"],
-    github: "https://github.com/aziztemimii/fraud-detection-project",
+    github: null, // repo privé — pas de lien public
     demo: null,
     featured: true,
   },
