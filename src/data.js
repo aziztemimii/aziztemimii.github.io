@@ -129,6 +129,17 @@ export const projects = [
     featured: true,
   },
   {
+    title: "Bank Fraud Detection",
+    subtitle: "ML Classification & Model Deployment",
+    period: "2025",
+    description:
+      "XGBoost classifier detecting fraudulent transactions on a highly imbalanced dataset (142 frauds among 85,118 test transactions). Class imbalance handled with scale_pos_weight, raising fraud recall from 0.71 to 0.79 (F1 0.84) — catching 112 of 142 frauds. Deployed as a FastAPI REST API and load-tested with 100 concurrent requests.",
+    tags: ["Python", "XGBoost", "scikit-learn", "FastAPI", "Imbalanced Data"],
+    github: "https://github.com/aziztemimii/fraud-detection-project",
+    demo: null,
+    featured: true,
+  },
+  {
     title: "MediNote",
     subtitle: "Intelligent Medical Report Analysis & Scoring",
     period: "Feb — May 2026",
@@ -138,6 +149,17 @@ export const projects = [
     github: null,
     demo: null,
     featured: true,
+  },
+  {
+    title: "MLOps Pipeline",
+    subtitle: "Modular ML Lifecycle with CI/CD",
+    period: "2025",
+    description:
+      "Machine learning pipeline split into independent stages (prepare, train, evaluate, save, load) with three interchangeable classifiers — Random Forest, AdaBoost and XGBoost. Model and scaler are persisted together to avoid train/serve skew, and a GitHub Actions workflow runs an end-to-end smoke test on every push.",
+    tags: ["Python", "scikit-learn", "XGBoost", "GitHub Actions", "CI/CD", "Joblib"],
+    github: "https://github.com/aziztemimii/aziz-temimi-mlops_project",
+    demo: null,
+    featured: false,
   },
   {
     title: "E-Transfert",
